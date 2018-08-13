@@ -1,4 +1,4 @@
-const Wolf = require('./models/wolves');
+const Wolf = require('./models/wolf');
 module.exports = [
     {
         method: 'GET',

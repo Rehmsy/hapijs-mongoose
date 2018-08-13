@@ -4,7 +4,7 @@ const Wolf = require('../../lib/models/wolf');
 //const { getErrors } = require('./helpers');
 
 
-describe('Game model', () => {
+describe('Wolf model', () => {
 
     it('validates good model', () => {
         const data = {
@@ -15,7 +15,6 @@ describe('Game model', () => {
         const json = wolf.toJSON();
         delete json._id;
         assert.deepEqual(json, data);
-        assert.isUndefined(wolf.validateSync());
     });
 });
 
