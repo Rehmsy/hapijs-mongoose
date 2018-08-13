@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 const Hapi = require('hapi');
 const Mongoose = require('mongoose');
 const Wolf = require('./lib/models/wolf');

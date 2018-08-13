@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 const Hapi = require('hapi');
 //const port = process.env.PORT || 4000;
 const server = new Hapi.Server({  
@@ -11,7 +13,7 @@ server.route(routes);
 server.route({
     method: 'GET',
     path: '/',
-    handler: function(request, h) {
+    handler: function(request) {
         return 'Hello, dumb world!';
     }
 });
@@ -19,7 +21,7 @@ server.route({
 server.route({
     method: 'GET',
     path: '/api',
-    handler: function(request, h) {
+    handler: function(request) {
         return 'Hello dumb Hapi API!';
     }
 });
